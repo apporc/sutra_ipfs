@@ -1,0 +1,7 @@
+name = "apporc"
+license = "MIT"
+features = []
+min_version = 0.20
+
+[author]
+  name = "apporc"
