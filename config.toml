@@ -1,6 +1,6 @@
 baseurl = "/"
 languageCode = "zh-cn"
-title = "IPFS 经舍"
+title = "IPFS 佛经"
 theme = "apporc"
 metadataformat = "yaml"
 canonifyURLs = false
@@ -44,7 +44,13 @@ googleAnalytics = ""
 [[menu.main]]
 	name   = "般若波罗蜜多心经"
 	url    = "xinjing/"
-	weight = 0
+	weight = 1
+
+[[menu.main]]
+	name   = "金刚般若波罗蜜经"
+	url    = "jingangjing/"
+	weight = 2
+
 
 [blackfriday]
 	smartypants	= true
