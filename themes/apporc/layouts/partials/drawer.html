@@ -1,5 +1,5 @@
 <nav aria-label="Navigation">
-  <a href="{{ with .Site.Params.repo_url }}{{ . }}{{ else }}{{ .Site.BaseURL }}{{ end }}" class="project">
+  <a href="{{ with .Site.BaseURL }}{{ . }}{{ end }}" class="project">
     <div class="banner">
       {{ with .Site.Params.logo }}
         <div class="logo">
@@ -7,17 +7,26 @@
         </div>
       {{ end }}
       <div class="name">
-        <strong>{{ .Site.Title }} {{ with .Site.Params.version }}<span class="version">{{ . }}</span>{{ end }}</strong>
-        {{ with .Scratch.Get "repo_id" }}
-          <br>
-          {{ . }}
-        {{ end }}
+        <strong>{{ .Site.Title }}</strong>
       </div>
     </div>
   </a>
 
   <div class="scrollable">
     <div class="wrapper">
+      <ul class="ipfs_link repo">
+        <li class="ipfs_io">
+          <a href="{{ .Site.Params.ipfs_url }}" target="_blank" title="ipfs.io">
+            <i class="icon icon-link"></i> IPFS.IO
+          </a>
+        <li class="ipfs_localhost">
+          <a href="{{ .Site.Params.local_ipfs_url }}" target="_blank" title="local ipfs">
+            <i class="icon icon-link"></i> localhost
+          </a>
+        </li>
+      </ul>
+      <hr>
+
       <div class="toc">
         {{ if gt (len .Site.Menus.main) 0 }}
         <ul>

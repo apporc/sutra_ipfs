@@ -1,25 +1,27 @@
 baseurl = "http://localhost:1313/"
 languageCode = "zh-cn"
-title = "Sutra On IPFS"
+title = "IPFS 经舍"
 theme = "apporc"
 metadataformat = "yaml"
 canonifyurls = false
-relativeurls = false
+relativeurls = true
 # Enable Google Analytics by entering your tracking id
 googleAnalytics = ""
 
 [params]
 	# General information
 	author = "apporc"
-	description = "sutra on ipfs."
+	description = "Sutra on IPFS."
 	copyright = "Released under the MIT license"
 
 	# Repository
 	provider = "GitHub"
 	repo_url = "https://github.com/apporc/sutra_ipfs"
+  ipfs_url = "https://ipfs.io/ipns/QmbcQfKDQ5WQZhAsycw9nxNNJjakLLDSJ2eERDTTirXbSG"
+  local_ipfs_url = "http://localhost:8080/ipns/QmbcQfKDQ5WQZhAsycw9nxNNJjakLLDSJ2eERDTTirXbSG"
 
 	version = "1.0.0"
-	logo = "images/logo.png"
+	logo = "images/logo.jpg"
 	favicon = ""
 
 	permalink = "#"
@@ -40,14 +42,9 @@ googleAnalytics = ""
     	code = "Ubuntu Mono"
 
 [[menu.main]]
-	name   = "Index"
-	url    = "/"
-	weight = 0
-
-[[menu.main]]
 	name   = "般若波罗蜜多心经"
-	url    = "xinjing"
-	weight = 10
+	url    = "xinjing/"
+	weight = 0
 
 [blackfriday]
 	smartypants	= true
