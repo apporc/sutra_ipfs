@@ -6,7 +6,7 @@ metadataformat = "yaml"
 canonifyURLs = false
 relativeURLs = true
 # Enable Google Analytics by entering your tracking id
-googleAnalytics = ""
+googleAnalytics = "UA-113782954-1"
 
 [params]
 	# General information
@@ -16,9 +16,8 @@ googleAnalytics = ""
 
 	# Repository
 	provider = "GitHub"
-	repo_url = "https://github.com/apporc/sutra_ipfs"
-        ipfs_url = "https://ipfs.io/ipns/QmbcQfKDQ5WQZhAsycw9nxNNJjakLLDSJ2eERDTTirXbSG"
-        local_ipfs_url = "http://localhost:8080/ipns/QmbcQfKDQ5WQZhAsycw9nxNNJjakLLDSJ2eERDTTirXbSG"
+  ipfs_url = "https://ipfs.io/ipns/QmbcQfKDQ5WQZhAsycw9nxNNJjakLLDSJ2eERDTTirXbSG"
+  repo_url = "https://github.com/apporc/sutra_ipfs.git"
 
 	version = "1.0.0"
 	logo = "images/logo.jpg"
